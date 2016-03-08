@@ -7,7 +7,7 @@ var one = prompt('1. Date.UTC begins on January 1 of what year?');
 if (one === '1970') {
 	counter += 1;
 	questionNumber += 1;
-	console.log('Correct!');
+	console.log('Correct! :D');
 }	else {
 	console.log('Incorrect :(');
 	questionNumber += 1;
@@ -25,10 +25,10 @@ if (two === 'number') {
 	questionNumber += 1;
 }
 
-console.log('3. Which property is used to present text in Helvetica - font-type or font-family?');
-var three = prompt('3. Which property is used to present text in Helvetica - font-type or font-family?');
+console.log('3. Which property is used to present text in Helvetica: font-type or font-family?');
+var three = prompt('3. Which property is used to present text in Helvetica: font-type or font-family?');
 
-if (three === 'number') {
+if (three === 'font-family') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -73,10 +73,10 @@ if (six === '16' || 'sixteen') {
 	questionNumber += 1;
 }
 
-console.log('7. Which is larger on the page - <h3> or <h5>?');
-var seven = prompt('7. Which is larger - <h3> or <h5>?');
+console.log('7. Which is larger on the page: <h3> or <h5>?');
+var seven = prompt('7. Which is larger: <h3> or <h5>?');
 
-if (seven === '<h3>') {
+if (seven === '<h3>' || 'h3') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -100,7 +100,7 @@ if (eight === 'Unary') {
 console.log('9. Math.floor() rounds up or down?');
 var nine = prompt('9. Math.floor() rounds up or down?');
 
-if (nine === 'down') {
+if (nine === 'down' || 'rounds down') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -124,7 +124,7 @@ if (ten === '||') {
 console.log('11. What HTML element connects a document to a style sheet?');
 var eleven = prompt('11. What HTML element connects a document to a style sheet?');
 
-if (eleven === '<link>') {
+if (eleven === '<link>' || 'link') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -136,7 +136,7 @@ if (eleven === '<link>') {
 console.log('12. How do you center text in CSS? (_______: ______;)');
 var twelve = prompt('12. How do you center text in CSS? (_______: ______;)');
 
-if (twelve === 'text-align: center;' || 'text-align:center;') {
+if (twelve === 'text-align: center;' || 'text-align:center;' || 'text-align: center' || 'text-align:center') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -148,7 +148,7 @@ if (twelve === 'text-align: center;' || 'text-align:center;') {
 console.log('13. The class attribute can be added to "one HTML tag" or "multiple HTML tags"?');
 var thirteen = prompt('13. The class attribute can be added to "one HTML tag" or "multiple HTML tags"?');
 
-if (thirteen === 'multiple HTML tags') {
+if (thirteen === 'multiple HTML tags' || 'multiple') {
 	counter += 1;
 	questionNumber += 1;
 	console.log('Correct! :D');
@@ -181,7 +181,7 @@ if (fifteen === 'line-height') {
 	questionNumber += 1;
 }
 console.log(counter);
-console.log('Your score: ' + (counter/questionNumber).toString() + '%!');
+console.log('Your score: ' + (Math.ceil(counter/questionNumber*100)).toString() + '%!');
 
 
 
