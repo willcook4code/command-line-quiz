@@ -9,18 +9,18 @@ if (one === '1970') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: 1970');
 }
 
 console.log('2. The parseFloat() function converts a string argument to return a floating point _______.');
 var two = prompt('2. The parseFloat() function converts a string argument to return a floating point _______.');
 questionNumber += 1;
 
-if (two === 'number') {
+if (two.toLowerCase() === 'number') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: number');
 }
 
 console.log('3. Which property is used to present text in Helvetica: font-type or font-family?');
@@ -31,18 +31,18 @@ if (three === 'font-family') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: font-family');
 }
 
 console.log('4. ":last-child" is an example of a _______.');
 var four = prompt('4. ":last-child" is an example of a _______.');
 questionNumber += 1;
 
-if (four === 'pseudo-class' || 'pseudoclass') {
+if (four === ('pseudo-class' || 'pseudoclass')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: pseudo-class');
 }
 
 console.log('5. Is the <span> element classified as inline or block-level?');
@@ -53,29 +53,29 @@ if (five === 'inline') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: inline');
 }
 
 console.log('6. 1 em is equal to how many px?');
 var six = prompt('6. 1 em is equal to how many px?');
 questionNumber += 1;
 
-if (six === '16' || 'sixteen') {
+if (six === ('16' || 'sixteen')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: 16');
 }
 
 console.log('7. Which is larger on the page: <h3> or <h5>?');
 var seven = prompt('7. Which is larger: <h3> or <h5>?');
 questionNumber += 1;
 
-if (seven === '<h3>' || 'h3') {
+if (seven === ('<h3>' || 'h3')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: <h3>');
 }
 
 console.log('8. What type of operator is the "bang" (!)?');
@@ -86,18 +86,18 @@ if (eight === 'Unary') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: Unary');
 }
 
 console.log('9. Math.floor() rounds up or down?');
 var nine = prompt('9. Math.floor() rounds up or down?');
 questionNumber += 1;
 
-if (nine === 'down' || 'rounds down') {
+if (nine === ('down' || 'rounds down')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: down');
 }
 
 console.log('10. What symbol of a conditional operator translates to "OR"?');
@@ -108,40 +108,40 @@ if (ten === '||') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: ||');
 }
 
 console.log('11. What HTML element connects a document to a style sheet?');
 var eleven = prompt('11. What HTML element connects a document to a style sheet?');
 questionNumber += 1;
 
-if (eleven === '<link>' || 'link') {
+if (eleven === ('<link>' || 'link')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: <link>');
 }
 
 console.log('12. How do you center text in CSS? (_______: ______;)');
 var twelve = prompt('12. How do you center text in CSS? (_______: ______;)');
 questionNumber += 1;
 
-if (twelve === 'text-align: center;' || 'text-align:center;' || 'text-align: center' || 'text-align:center') {
+if (twelve === ('text-align: center;' || 'text-align:center;' || 'text-align: center' || 'text-align:center')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: text-align: center;');
 }
 
 console.log('13. The class attribute can be added to "one HTML tag" or "multiple HTML tags"?');
 var thirteen = prompt('13. The class attribute can be added to "one HTML tag" or "multiple HTML tags"?');
 questionNumber += 1;
 
-if (thirteen === 'multiple HTML tags' || 'multiple') {
+if (thirteen === ('multiple HTML tags' || 'multiple')) {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: multiple HTML tags');
 }
 
 console.log('14. When centering a block element, enter "margin: 0 ____".');
@@ -152,7 +152,7 @@ if (fourteen === 'auto') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: auto');
 }
 
 console.log('15. To separate the distance between 2 lines of text, use which property - line-height or line-break?');
@@ -163,7 +163,7 @@ if (fifteen === 'line-height') {
 	counter += 1;
 	console.log('Correct! :D');
 }	else {
-	console.log('Incorrect :(');
+	console.log('Incorrect: line-height');
 }
 console.log(counter);
 console.log('Your score: ' + (Math.ceil(counter/questionNumber*100)).toString() + '%!');
