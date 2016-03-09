@@ -1,5 +1,6 @@
 var counter = 0;
 var questionNumber = 0;
+var startTime = Date.now();
 
 console.log('1. Date.UTC begins on January 1 of what year?');
 var one = prompt('1. Date.UTC begins on January 1 of what year?');
@@ -166,8 +167,12 @@ if (fifteen.toLowerCase() === 'line-height') {
 	console.log('Incorrect: line-height');
 }
 
+var endTime = Date.now();
+var elapsedTime = (endTime - startTime);
+
 console.log(counter);
-console.log('Your score: ' + (Math.ceil(counter/questionNumber*100)).toString() + '%!');
+console.log('Your score: ' + (Math.round(counter/questionNumber*100)).toString() + '%!');
+console.log('You completed the quiz in a whopping ' + (Math.round(elapsedTime/(10*60))*.01) + ' minutes!');
 
 
 
